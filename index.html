@@ -69,9 +69,11 @@
 
 			<ol>
                 
-				<li>D. Kouis, N. Konstantinou: <a href="http://dx.doi.org/10.1108/LR-06-2014-0074">Electronic Textbooks Advantages and Challenges for the Hellenic Higher Education and Publishing Community</a>, In Library Review, 63 (6/7), 2014</li>
+				<!-- http://dx.doi.org/10.1108/LR-06-2014-0074 -->
+				<li>D. Kouis, N. Konstantinou: <a href="http://www.emeraldinsight.com/doi/abs/10.1108/LR-06-2014-0074">Electronic Textbooks Advantages and Challenges for the Hellenic Higher Education and Publishing Community</a>, In Library Review, 63 (6/7), 2014</li>
                 
-                <li>N. Konstantinou, D.E. Spanos, N. Houssos, N. Mitrou: <a href="http://dx.doi.org/10.1108/EL-12-2012-0156">Exposing Scholarly Information as Linked Open Data: RDFizing DSpace contents</a>, In The Electronic Library, 32 (6), 2014</li>
+				<!-- http://dx.doi.org/10.1108/EL-12-2012-0156 -->
+                <li>N. Konstantinou, D.E. Spanos, N. Houssos, N. Mitrou: <a href="http://www.emeraldinsight.com/doi/abs/10.1108/EL-12-2012-0156">Exposing Scholarly Information as Linked Open Data: RDFizing DSpace contents</a>, In The Electronic Library, 32 (6), 2014</li>
             
                 <li>N. Konstantinou: <a href="http://dx.doi.org/10.2174/2210327911202010044">Converting Raw Sensor Data to Semantic Web Triples: A Survey of Implementation Options</a>, In Int. J. of Sensors, Wireless Communications and Control, 2(1): 44-52, 2012</li>
                 
@@ -191,10 +193,34 @@
                 
 			</ol>
             
+			<h3>
+				<a class="anchor" href="#software"></a>Software
+			</h3>
+			
+            <ol>
+            
+                <li>
+                    The <a href="https://github.com/nkons/r2rml-parser">R2RML Parser</a> is a tool that can export relational database contents as RDF graphs, based on an R2RML mapping document.
+                </li>
+                
+                <li><a href="https://github.com/EKT/Biblio-Transformation-Engine">Biblio-Transformation-Engine</a> is a java framework for filtering and modifying records from various sources, introduced <a href="papers/OR_2012_EKT_Biblio_final_12.pdf">here</a>.</li>
+                
+                <li>The <a href="https://code.google.com/p/cerif-jpa-persistence/">cerif-jpa-persistence</a> is a java library for accessing CERIF databases with the Java Persistence API.</li>
+                
+                <li>
+                <a href="code/expowave.zip">Expowave</a> is a theoretical framewrok that simulates an RFID reader network that is scheduled using Expowave, an algorithm introduced and analyzed <a href="http://dx.doi.org/10.1109/TCOMM.2011.112811.100142">here</a>. You can use RandomGraphGenerator.java to produce random graphs that will have a probability <i>d</i> of being connected to each other. The randomly-generated included graph names denote the number of nodes and <i>d</i>. In order to perform simulation experiments, you have to tweak Simulation.java according to your needs. In short, you can obtain simulation measurements about a node, about the whole graph, or mean measurements about the whole graph as σ (RFID tag birth probability) increases, for each iteration.
+                </li>
+                
+                <li>
+                    The VisAVis Protégé plugin for mapping ontologies to databases was the diploma thesis of Dimitris Spanos and Michalis Chalas. The work was presented <a href="papers/visavis06.pdf">here</a>. It uses the Protégé libraries to graphically represent an ontology, a database (MySQL or PostgreSQL) and the mappings between them. The plugin allows queries to be asked to the ontology and returns results from the database. To see VisAVis in action, you have to create a VisAVis folder in Protégé's plugins folder and copy the <a href="code/visavis/VisAVisTab.jar">jar file</a> along with its <a href="code/visavis/dependencies.zip">dependencies</a> into VisAVis folder. Next, create a new Protégé Project and select Project -&gt; Configure -&gt; VisAVisTab. The plugin is tested in Protégé 3.0, 3.1, 3.1.1 and 3.2beta. To compile the <a href="code/visavis/source.zip">source code</a>, you have to extract the code in the plugins folder of Protégé and add to Protégé's MANIFEST.MF the two lines included in VisAVis' MANIFEST.MF.
+                </li>
+                
+            </ol>
+
             <p></p>
             
             <div style="text-align: right; font-size: 75%; ">
-                Homepage last updated on September 24th 2014
+                Homepage last updated on September 25th 2014
             </div>
             
 		</section>
