@@ -1,0 +1,19 @@
+SPARQL
+prefix dc:      <http://purl.org/dc/elements/1.1/>
+prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+prefix dctype:  <http://purl.org/dc/dcmitype/>
+prefix foaf:    <http://xmlns.com/foaf/0.1/>
+prefix map:     <http://example.com/base#>
+prefix rr:      <http://www.w3.org/ns/r2rml#>
+prefix owl:     <http://www.w3.org/2002/07/owl#>
+prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+prefix dcterms:  <http://purl.org/dc/terms/>
+
+SELECT DISTINCT ?eperson ?name
+FROM <http://example.com/r2rml?graph=http%3A%2F%2Ftemp%2Fproduct>
+WHERE {
+	?eperson rdf:type foaf:Person .
+	?eperson foaf:name ?name .
+FILTER (?name != "mlo vqlbcbk" )}
+ORDER BY ?eperson
+LIMIT 500
