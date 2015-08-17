@@ -757,7 +757,7 @@ a.anchor {
   text-align: center;
 }
 #header nav li a:hover {
-text-decoration: underline;
+
 }
 #header nav li.fork {
   float: inherit;
