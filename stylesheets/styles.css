@@ -730,7 +730,8 @@ a.anchor {
   font-size: 14px;
 }
 #header nav li a {
-  /* color: white; */
+  font-weight: bold;
+  color: #5d910b;
   /* border: 1px solid #5d910b; */
   /* background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10)); */
   /* background: -webkit-linear-gradient(#93bd20, #659e10); */
@@ -757,7 +758,7 @@ a.anchor {
   text-align: center;
 }
 #header nav li a:hover {
-
+  color: #659e10;
 }
 #header nav li.fork {
   float: inherit;
