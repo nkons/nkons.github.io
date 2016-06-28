@@ -606,7 +606,7 @@ strong {
 }
 
 .wrapper {
-  max-width: 650px;
+  max-width: 750px;
   margin: 0 auto;
   position: relative;
   padding: 0 20px;
@@ -775,7 +775,7 @@ a.anchor {
 }
 
 section {
-  max-width: 650px;
+  max-width: 750px;
   padding: 20px 0px 50px 0px;
   margin: 20px 0;
   margin-top: 70px;
