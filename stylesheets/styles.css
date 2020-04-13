@@ -1,3 +1,7 @@
+* {
+  -webkit-text-size-adjust: none;
+}
+
 body {
   padding: 0px 0 20px 0px;
   margin: 0px;
@@ -37,11 +41,6 @@ ul {
   padding: 0 0 0 40px;
 }
 
-h1 {
-  font-size: x-large;
-  margin: 0 0 10px 0;
-}
-
 h2 {
   font-size: large;
   font-weight: normal;
@@ -54,7 +53,6 @@ h2 {
   top: 0px;
   width: 100%;
   position: fixed;
-  font-size: large;  
   color: #0000cd;
   text-align: center;
   line-height: 1;
@@ -86,11 +84,11 @@ h2 {
 }
 .title h1 {
   font-weight: normal;
-  font-size: xx-large;
+  font-size: x-large;
   text-align: center;
   padding-top: 20px;
 }
-.title p {
+.title h2 {
   font-weight: normal;
   font-size: larger;
   text-align: center;
