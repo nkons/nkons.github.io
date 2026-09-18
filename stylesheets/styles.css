@@ -1,3 +1,24 @@
+:root {
+  color-scheme: light dark;
+  --bg: white;
+  --text: black;
+  --link: #0000cd;
+  --link-hover: black;
+  --header-bg: white;
+  --border: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121212;
+    --text: #e4e4e4;
+    --link: #7ea6ff;
+    --link-hover: #ffffff;
+    --header-bg: #1b1b1b;
+    --border: #3d3d3d;
+  }
+}
+
 * {
   -webkit-text-size-adjust: none;
 }
@@ -9,11 +30,12 @@ body {
   font-size: medium;
   line-height: 1.5;
   font-weight: normal;
-  color: black;
+  color: var(--text);
+  background-color: var(--bg);
 }
 
 a {
-  color: #0000cd;
+  color: var(--link);
   text-decoration: none;
 }
 a:hover {
@@ -53,11 +75,11 @@ h2 {
   top: 0px;
   width: 100%;
   position: fixed;
-  color: #0000cd;
+  color: var(--link);
   text-align: center;
   line-height: 1;
-  background:  white;
-  border-bottom: 1px solid black;
+  background: var(--header-bg);
+  border-bottom: 1px solid var(--border);
 }
 .header ul li {
   display: inline-block;
@@ -65,7 +87,7 @@ h2 {
   padding: 0 20px 0 0;
 }
 .header ul li a:hover {
-  color: black;
+  color: var(--link-hover);
   text-decoration: none;
 }
 
@@ -93,4 +115,3 @@ h2 {
   font-size: larger;
   text-align: center;
 }
-
